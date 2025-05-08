@@ -3,24 +3,15 @@ import salaryData from '.././.././../data/salaries.json';
 
 export function filterJobData(query: string) {
   const jobTitle = extractJobTitle(query).toLowerCase().trim();
-  const location = extractLocation(query).toLowerCase().trim();
-
-  console.log("Extracted Job Title:", jobTitle);
-  console.log("Extracted Location:", location);
-
+  
   const jobDescription = jobDescriptions.find(job => 
     job.title.toLowerCase().includes(jobTitle)  );
 
   const jobCode = jobDescriptions.find(job =>  job.title.toLowerCase().includes(jobTitle))?.code
 
-  console.log("Job Code: ", jobCode);
-
   const salaryDataForJob = salaryData.find(salary => 
     salary['Job Code'] === jobCode 
   );
-
-  console.log("Filtered Job Description:", jobDescription);
-  console.log("Filtered Salary Data:", salaryDataForJob);
 
   if (query.toLowerCase().includes("salary")) {
     return { jobDescription: null, salaryData: salaryDataForJob };

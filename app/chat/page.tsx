@@ -1,14 +1,7 @@
 import Body from '@/components/chat/Body'
 import Form from '@/components/chat/Form'
-import type { FC } from 'react'
 
-interface pageProps {
-}
-
-const page: FC<pageProps> = ({
-  
-
-}) => {
+const page = () => {
   return (
     <div className=''>
       <Body />

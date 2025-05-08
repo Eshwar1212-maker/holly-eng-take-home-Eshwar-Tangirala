@@ -10,7 +10,7 @@ const Message: FC<MessageProps> = ({
 
 }) => {
   return (
-    <p className={message!.sender === "CHATBOT" ? 'text-xl mr-auto text-blue-400 pl-10' : "text-xl ml-auto text-white pr-10"}>
+    <p className={message!.sender === "CHATBOT" ? 'text-md mr-auto text-blue-400 pl-10 max-w-[60%] my-3' : "text-md ml-auto text-white pr-10 max-w-[60%] my-3"}>
       {message!.message}
     </p>
   )
