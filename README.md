@@ -30,7 +30,8 @@ Here are the steps I took in order from start to finish, in terms of what I thou
   
 ## Technologies I used
 
-I used Cohere for the LLM. The reason I used Cohere, is its free limit is very easy to use compared to OpenAi and Hugging Face, however, any LLM would work. 
+I used Cohere for the LLM. The reason I used Cohere, is its free limit is very easy to use compared to OpenAi and Hugging Face, however, any LLM would work. For data fetching,
+I just used Axios, and for styling I used Tailwind CSS. 
 
 ## Challenges I faced
 
@@ -42,7 +43,7 @@ Here are a few things that I think I could of improved if i had more time.
 
 1. User interface and responsiveness.
 
-2. Writing a reusable function for the POST request in the chat, making it reusable based off of whatever LLM the engineer would want to use, as well 
+2. Writing a reusable function for the POST request in the chat(Form component), making it reusable based off of whatever LLM the engineer would want to use, as well 
     as making the code cleaner.
 
 3. I was going to put the <Body /> and <Form /> components both in the 'page.tsx' for better structure, instead of having the <Form/> in the body, but was short on time.
