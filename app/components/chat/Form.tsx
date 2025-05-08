@@ -37,7 +37,7 @@ const Form: FC<FormProps> = ({ handleAddMessage }) => {
         Salary Range: ${filteredSalaryData ? `${salRange[2]} - ${salRange[salRange.length - 1]}` : 'Not available'}
         Just answer with the information needed in a concise sentence.
         Answer:
-      `;
+      `;      
 
       setIsLoading(true)
       setInput(""); 
