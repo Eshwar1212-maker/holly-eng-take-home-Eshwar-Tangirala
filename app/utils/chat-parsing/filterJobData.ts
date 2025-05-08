@@ -13,8 +13,6 @@ export function filterJobData(query: string) {
     salary['Job Code'] === jobCode 
   );
 
-  console.log("salary data for job ", salaryDataForJob)
-
   if (query.toLowerCase().includes("salary")) {
     return { jobDescription: null, salaryData: salaryDataForJob };
   } else {
