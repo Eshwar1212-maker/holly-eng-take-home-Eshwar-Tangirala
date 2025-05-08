@@ -43,12 +43,14 @@ Here are a few things that I think I could of improved if i had more time.
 
 1. User interface and responsiveness.
 
-2. Writing a reusable function for the POST request in the chat(Form component), making it reusable based off of whatever LLM the engineer would want to use, as well 
+2. Improved data processing, adding things like fuzzy matching or partial matching as well as fixing for typos and more error handling incase matches are not found.
+
+3. Writing a reusable function for the POST request in the chat(Form component), making it reusable based off of whatever LLM the engineer would want to use, as well 
     as making the code cleaner.
 
-3. I was going to put the <Body /> and <Form /> components both in the 'page.tsx' for better structure, instead of having the <Form/> in the body, but was short on time.
+4. I was going to put the <Body /> and <Form /> components both in the 'page.tsx' for better structure, instead of having the <Form/> in the body, but was short on time.
 
-4. Other minor touch ups, some Typescript optimizations or code refactoring.
+5. Other minor touch ups, some Typescript optimizations or code refactoring.
 
 Would love to chat about these ideas with you in the next round potentially!
 
